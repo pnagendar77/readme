@@ -1,3 +1,4 @@
+a) 
 APPROXIMATIONS ALGORITHM
 
 An algorithm that runs in polynomial time and outputs a solution close to the optimal solution is called an approximation algorithm.
@@ -45,3 +46,11 @@ Algorithm : Greedy-Set-Cover (X, F)
 5)	U ← U – S
 6)	C ← C ∪ {S}
 7)	return C
+
+b) As many moves as possible for a Knight (Horse) on a chess board starting from any arbitrary position. Knight cannot touch any square (place) second time.
+ 
+ A knight's tour is a sequence of moves of a knight on a chessboard such that the knight visits every square only once. If the knight ends on a square that is one knight's move from the beginning square (so that it could tour the board again immediately, following the same path), the tour is closed; otherwise, it is open.
+ 
+ The knight's tour problem is an instance of the more general Hamiltonian path problem in graph theory. The problem of finding a closed knight's tour is similarly an instance of the Hamiltonian cycle problem. Unlike the general Hamiltonian path problem, the knight's tour problem can be solved in linear time.
+
+

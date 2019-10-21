@@ -11,3 +11,18 @@ Conclusion:
 A set of vertices such that each edge of the graph is incident to atleast one vertex of the set, is called vertex cover
 Greedy algorithm may or may not produce the optimal solution
 Approximation algorithm doesn’t always guarantee optimal solution but its aim is to produce a solution which is as close as possible to the optimal solution
+
+STATEMENT : Approximating Set Cover
+Definition : An Instance (X, F) of the set-covering problem consists of a finite set X and a family F of subset of X, such that every elemennt of X belongs to at least one subset of F :
+ X = [ S∈F S 
+We say that a subset S ∈ F covers all elements in X. Our goal is to find a minimum size subset C ⊆ F whose members cover all of X.
+ X = [ S∈C S (1) 
+The cost of the set-covering is the size of C, which defines as the number of sets it contains, and we want |C| to be minimum. An example of set-covering is shown in Figure 1. In this Figure, the minimum size set cover is C = {T3, T4, T5} and it has the size of 3.
+Algorithm : Greedy-Set-Cover (X, F)
+1)	U ← X 
+2)	 C ← ∅ 
+3)	 While U is not equal to 0
+4)	do select an S ∈ F that maximizes |S ∩ U|
+5)	U ← U – S
+6)	C ← C ∪ {S}
+7)	return C

@@ -35,7 +35,9 @@ Definition : An Instance (X, F) of the set-covering problem consists of a finite
 We say that a subset S ∈ F covers all elements in X. Our goal is to find a minimum size subset C ⊆ F whose members cover all of X.
  X = [ S∈C S (1) 
 The cost of the set-covering is the size of C, which defines as the number of sets it contains, and we want |C| to be minimum. An example of set-covering is shown in Figure 1. In this Figure, the minimum size set cover is C = {T3, T4, T5} and it has the size of 3.
+
 Algorithm : Greedy-Set-Cover (X, F)
+
 1)	U ← X 
 2)	 C ← ∅ 
 3)	 While U is not equal to 0
